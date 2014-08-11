@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{ position:relative; width:980px; margin:0 auto; padding-top:20px;}
+.main_left{ float:left; width:380px; border:1px solid #ccc; padding:10px; border-radius:10px; box-shadow:rgba(0,0,0,.3) 1px 1px 5px;}
+.main_right{ position:relative; float:right; width:560px; height:455px; background:#000; color:#0F0;}
+
+.score_state{ position:relative; margin-bottom:10px;}
+.score_state h2{ float:left; padding-left:12px; font-size:26px; line-height:40px;}
+.score_state li{ float:right; width:60px; height:40px; margin-left:10px; line-height:20px; border-radius:5px; background:#aaa; text-align:center; color:#fff;}
+.score_state li .txt{ font-size:14px; font-family:Arial, Helvetica, sans-serif; line-height:16px;}
+
+.game_field{ position:relative; border:5px solid #ccc; width:370px; height:370px; border-radius:5px; overflow:hidden; background:#ccc;  font-family:Arial, Helvetica, sans-serif; font-size:30px;}
+.game_field .bg span{ float:left; width:88px; height:88px; border-radius:5px; margin-right:6px; margin-bottom:6px;background:#ddd;}
+.game_field .bg span.last{margin-right:0;}
+.game_field .bg span:nth-child(12+n){margin-bottom:0;}
+.game_field .cell{ position:absolute; width:88px; height:88px; border-radius:5px; text-align:center; line-height:88px;  background:#eee; z-index:2;}
+.game_field .level_1{ background:#eae7e2;}
+.game_field .level_2{ background:#f2d5a3;}
+.game_field .level_3{ background:#eab77c; color:#fff;}
+.game_field .level_4{ background:#f98b5a; color:#fff;}
+.game_field .level_5{ background:#e91616; color:#fff;}
+.game_field .level_6{ background:#f568a4; color:#fff;}
+.game_field .level_7{ background:#e4048d; color:#fff;}
+.game_field .level_8{ background:#c51bab; color:#fff;}
+.game_field .level_9{ background:#a138b8; color:#fff;}
+.game_field .level_10{ background:#c000e9; color:#fff;}
+
+.btns{ font-family:Verdana, Geneva, sans-serif;}
+.btns a{}
+.btns a:hover, .btns a.hover{ text-decoration:none; background:rgba(0,255,0,.4);}
+.btns .btn_up, .btns .btn_down, .btns .btn_left, .btns .btn_right{ position:absolute; width:40px; height:40px; border:1px solid #0f0; border-radius:10px; overflow:hidden; color:#0f0; font-size:25px; text-align:center; line-height:40px;}
+.btns .btn_up{left:100px; bottom:60px;}
+.btns .btn_down{left:100px; bottom:10px;}
+.btns .btn_left{left:50px; bottom:10px;}
+.btns .btn_right{left:150px; bottom:10px;}
+.btns .btn_automove, .btns .btn_autopilot, .btns .btn_fallback{ position:absolute; left:200px; bottom:10px; width:100px; height:40px; border:1px solid #0f0; border-radius:10px; overflow:hidden; color:#0f0; font-size:16px; text-align:center; line-height:24px;}
+.btns .btn_automove s, .btns .btn_autopilot s, .btns .btn_fallback s{ display:block; font-size:12px; text-decoration:none; line-height:14px;}
+.btns .btn_autopilot{left:310px; bottom:10px;}
+.btns .btn_fallback{left:420px; bottom:10px;}

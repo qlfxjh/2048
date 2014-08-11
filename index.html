@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2048 by JOHN WONG</title>
+<meta name="description" content=" 内容介绍不超过100个中文">
+<meta name="keywords" content=" 内容相关关键词3-5个">
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+
+</head>
+
+<body>
+<div class="main clearfix">
+	<div class="main_left">
+        <div class="score_state">
+        	<h2>2048</h2>
+            <ul class="clearfix">
+	            <li><p class="tit">BEST</p><p class="txt" id="txt_best">0</p></li>
+                <li><p class="tit">SCORE</p><p class="txt" id="txt_score">0</p></li>            
+            </ul>
+        </div>
+        <div class="game_field" id="game_field">
+        	<div class="bg">
+            	<span></span>
+                <span></span>
+                <span></span>
+                <span class="last"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="last"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="last"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="last"></span>
+            </div>
+
+        	<!--span class="cell" num="2" style="left:0; top:0">2</span>
+            <span class="cell level_1" style="left:94px; top:0">4</span>
+            <span class="cell level_2" style="left:188px; top:0">8</span>
+            <span class="cell level_3" style="left:282px; top:0">16</span>
+            <span class="cell level_4" num="2" style="left:0; top:94px">32</span>
+            <span class="cell level_5" num="2" style="left:94px; top:94px">64</span>
+            <span class="cell level_6" num="2" style="left:188px; top:94px">128</span>
+            <span class="cell level_7" num="2048"  style="left:282px; top:94px">256</span>
+            <span class="cell level_8" num="2" style="left:0; top:188px;">512</span>
+            <span class="cell level_9" num="2" style="left:94px; top:188px;">1024</span>
+            <span class="cell level_10" num="2" style="left:188px; top:188px;">2018</span-->
+        </div>
+    </div>
+    <div class="main_right">
+    	<div class="btns">
+        	<a href="javascript:;" class="btn_up" id="btn_up">&and;</a>
+            <a href="javascript:;" class="btn_down" id="btn_down">&or;</a>
+            <a href="javascript:;" class="btn_left" id="btn_left">&lt;</a>
+            <a href="javascript:;" class="btn_right" id="btn_right">&gt;</a>
+            <a href="javascript:;" class="btn_automove" id="btn_automove">Auto Move<s>[key space]</s></a>
+            <a href="javascript:;" class="btn_autopilot" id="btn_autopilot">Auto Pilot<s>off</s></a>
+            <a href="javascript:;" class="btn_fallback" id="btn_fallback">Fall Back<s>[key Back]</s></a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--修改点20140508，以下js代码全部替换-->
+<script src="js/jw_slider.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/2048.js"></script>
+<script type="text/javascript">
+
+
+</script>
+
+
+</body>
+</html>
